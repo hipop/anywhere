@@ -3,7 +3,8 @@
   "version": "1.4.0",
   "description": "Run static file server anywhere",
   "bin": {
-    "anywhere": "./bin/anywhere"
+    "anywhere": "./bin/anywhere",
+    "test" : "cd ./test "
   },
   "keywords": [
     "Static",
@@ -19,7 +20,8 @@
     "debug": "^2.2.0",
     "minimist": "~0.1.0",
     "serve-index": "1.2.0",
-    "serve-static": "1.5.3"
+    "serve-static": "1.5.3",
+    "ssi": "^0.3.0"
   },
   "repository": {
     "type": "git",
