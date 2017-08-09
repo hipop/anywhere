@@ -103,7 +103,6 @@ app.use(function (req, res, next) {
   var parser = new ssi(baseDir, baseDir, '/**/*.html');
   if (filename.indexOf('.html') > -1 && fs.existsSync(filename))
   {
-    console.log(filename, parser);
     res.end(parser.parse(filename, fs.readFileSync(filename, {
       encoding: 'utf8'
     })).contents);
